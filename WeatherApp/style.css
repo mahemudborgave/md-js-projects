@@ -1,0 +1,97 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.card {
+    font-size: 1.7rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* width: 300px; */
+    background: rgb(25,180,194);
+    background: linear-gradient(133deg, rgba(25,180,194,1) 35%, rgba(103,45,198,0.7679446778711485) 94%);    padding: 2em;
+    border-radius: 1.5em;
+}
+
+.search {
+    display: flex;
+}
+
+.search input {
+    border-radius: 2em;
+    outline: none;
+    border: none;
+    font-size: 1.7rem;
+    padding: .5em 1.5em;
+    margin-right: .7em;
+    width: 250px;
+}
+
+.search button {
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; 
+}
+
+.search button img {
+    width: 70%;
+    object-fit: contain ;
+    padding: .3em;
+}
+
+.weather {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.weather > img {
+    width: 140px;
+}
+
+.weather .temp {
+    color: white;
+    font-size:7rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.weather .city {
+    color: white;
+    font-size:4rem;
+    text-align: center;
+}
+
+.detail {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    margin-top: 2em;
+}
+
+.humidity, .wind {
+    display: flex;
+}
+
+.humidity i, .wind i {
+    font-size: 3rem;
+    margin-right: .4em;
+}
+
+.humidity-detail p, .wind-detail p {
+    font-size: 1.7rem;
+}
+
+.humidity-detail .humidity-per, .wind-detail .wind-speed {
+    font-size: 2.6rem;
+}
+
